@@ -18,7 +18,7 @@ def convertAll(onlyfiles, it, filepath):
 		convert(size, i, wb)
 
 
-def convert(size, i, wb):
+def convert(size, i, wb, os):
 	sheet = wb.sheet_by_index(i)
 	if not os.path.exists(filepathOutput + '/' + it):
 	    os.makedirs(filepathOutput + '/' + it)
